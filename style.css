@@ -1,0 +1,55 @@
+body {
+background-color: black;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    animation-name: x;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes x{
+
+    0% {
+        background-color: brown;
+        translate: 0 0;
+        rotate: 0;
+    }
+
+    25% {
+        background-color: aquamarine;
+        translate: 0 500px;
+        rotate: 90deg;
+
+    }
+
+    50%{
+        background-color:blueviolet ;
+        translate: 400px 500px;
+        rotate: 180deg;
+    }
+
+    75%{
+
+        background-color: burlywood;
+        translate: 400px 0px;
+        rotate: 270deg;
+    }   
+
+    100% {
+
+       background-color: blue; 
+       translate: 0px 0px; 
+       rotate: 360deg;
+    }
+
+
+}
+div:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
